@@ -1,0 +1,69 @@
+//
+//  SetUrlViewController.m
+//  BridgeDemo
+//
+//  Created by  xyh on 12-10-10.
+//  Copyright (c) 2012年 xyh. All rights reserved.
+//
+
+#import "SetUrlViewController.h"
+#import "RootViewController.h"
+
+@interface SetUrlViewController ()
+
+@end
+
+@implementation SetUrlViewController
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    // Do any additional setup after loading the view from its nib.
+//    UIBarButtonItem *setUrl = [[UIBarButtonItem alloc] initWithTitle:@"确定"
+//                                                               style:UIBarButtonItemStyleBordered
+//                                                              target:self
+//                                                              action:@selector(setUrl)];
+//    self.navigationItem.rightBarButtonItem = setUrl;
+//    [setUrl release];
+    UIButton *confrimButton=[UIButton buttonWithType:UIButtonTypeRoundedRect];
+    confrimButton.frame=CGRectMake(200, 170, 80, 40);
+    [confrimButton setTitle:@"确定" forState:UIControlStateNormal];
+    [confrimButton addTarget:self action:@selector(setUrl) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:confrimButton];
+    
+    if ([[[NSUserDefaults standardUserDefaults] objectForKey:@"url"] length]>1) {
+        tv.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"url"];
+    }
+}
+
+- (void)setUrl {
+<<<<<<< .mine
+=======
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [self.navigationController popToRootViewControllerAnimated:YES];
+>>>>>>> .r1103
+    
+    [self.navigationController pushViewController:[RootViewController share] animated:YES];
+    [[RootViewController share] loaUrlWithString:tv.text];
+    [[NSUserDefaults standardUserDefaults] setObject:tv.text forKey:@"url"];
+}
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return NO;
+}
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+@end

@@ -1,0 +1,82 @@
+<html>
+<header>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=2.0,minimum-scale=1.0,user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="../../menuapp/menuapp.css">
+	<script src="../../thirdparty/zepto.min.js" type="text/javascript"></script>
+	<script src="../../menuapp/menuapp.js" type="text/javascript"></script>
+</header>
+<body>
+</body>
+<script>
+
+$(document).ready(
+	function()
+	{
+		var menuHeader = "<div class='ma-search'><img src='../../images/search.png'/>搜索</div>";
+		var menuObject =
+		{
+			"sections":
+			[
+				{
+					"title": "银行", // OPTIONAL
+					"items": // OPTIONAL
+					[
+						{
+							"id": "section1-item1", // OPTIONAL
+							"html": "<img src='../../images/plug.png'/>我的储蓄", // REQUIRED
+							"data": { "name": "Section1-Item1" } // OPTIONAL
+						},
+						{
+							"id": "section1-item2",
+							"html": "<img src='../../images/plug.png'/>我要转帐",
+							"data": { "name": "Section1-Item2" }
+						}
+					]
+				},
+				{
+					"title":	   "基金",
+					"items":
+					[
+						{
+							"id": "section2-item1",
+							"html": "<img src='../../images/plug.png'/>基金理财",
+							"data": { "name": "Section2-Item1" }
+						}
+					]
+				}
+			]
+		};
+
+		loadMenuItem = function(element)
+		{
+			menuApp.pushView( { "title": element.title, "main": element.data("name") } );
+		};
+
+		// Remove address bar to make sure we have a correct sized window
+		window.scrollTo(0, 1);
+
+		// Build menu app
+		menuApp = new MenuApp();
+		menuApp.initialize($("body"), menuHeader, menuObject);
+		menuHeader = undefined;
+		menuObject = undefined;
+
+		// Load initial view
+		loadMenuItem($("#section1-item1"));
+
+		// Setup right button behaviour
+		$(".ma-nav-right").click(
+			function()
+			{
+				location.reload();
+			}
+		);
+
+		// Setup menu behaviour
+		$(".ma-section-item").click( function() { loadMenuItem($(this)); } );
+	}
+);
+
+</script>
+</html>

@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0820EA2B165CAE560005629E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0820EA2A165CAE560005629E /* UIKit.framework */; };
+		0820EA2D165CAE560005629E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0820EA2C165CAE560005629E /* Foundation.framework */; };
+		0820EA2F165CAE560005629E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0820EA2E165CAE560005629E /* CoreGraphics.framework */; };
+		0820EA35165CAE560005629E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0820EA33165CAE560005629E /* InfoPlist.strings */; };
+		0820EA37165CAE560005629E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0820EA36165CAE560005629E /* main.m */; };
+		0820EA3B165CAE560005629E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0820EA3A165CAE560005629E /* AppDelegate.m */; };
+		08379433165CB3DA002588BC /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379432165CB3DA002588BC /* MobileCoreServices.framework */; };
+		08379435165CB3DE002588BC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379434165CB3DE002588BC /* AudioToolbox.framework */; };
+		08379437165CB3E3002588BC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379436165CB3E3002588BC /* AVFoundation.framework */; };
+		08379439165CB3EE002588BC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379438165CB3EE002588BC /* AddressBookUI.framework */; };
+		0837943B165CB3F1002588BC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0837943A165CB3F1002588BC /* AddressBook.framework */; };
+		0837943D165CB3F7002588BC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0837943C165CB3F7002588BC /* SystemConfiguration.framework */; };
+		0837943F165CB3FF002588BC /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0837943E165CB3FF002588BC /* CoreMedia.framework */; };
+		08379441165CB415002588BC /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379440165CB415002588BC /* libsqlite3.dylib */; };
+		08379443165CB423002588BC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08379442165CB423002588BC /* Security.framework */; };
+		0837944D165CB4C5002588BC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08379449165CB4C5002588BC /* RootViewController.m */; };
+		083EA6CD1671CD9300329F8D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 083EA6CC1671CD9300329F8D /* MapKit.framework */; };
+		FE0A6E6E1680928800A91B46 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0A6E6D1680928800A91B46 /* MBProgressHUD.m */; };
+		FE711462168BEC7A00AC6BF0 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE711461168BEC7A00AC6BF0 /* CoreLocation.framework */; };
+		FEBB072816991CD800FBC538 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = FEBB071D16991CD800FBC538 /* index.html */; };
+		FEC8A70416E97CBF00851A59 /* example in Resources */ = {isa = PBXBuildFile; fileRef = FEC8A70016E97CBF00851A59 /* example */; };
+		FEC8A70516E97CBF00851A59 /* images in Resources */ = {isa = PBXBuildFile; fileRef = FEC8A70116E97CBF00851A59 /* images */; };
+		FEC8A70616E97CBF00851A59 /* menuapp in Resources */ = {isa = PBXBuildFile; fileRef = FEC8A70216E97CBF00851A59 /* menuapp */; };
+		FEC8A70716E97CBF00851A59 /* thirdparty in Resources */ = {isa = PBXBuildFile; fileRef = FEC8A70316E97CBF00851A59 /* thirdparty */; };
+		FEC8A70916E98A0600851A59 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = FEC8A70816E98A0600851A59 /* icon.png */; };
+		FECA17671688598F00FB6029 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FECA17661688598F00FB6029 /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0820EA26165CAE560005629E /* FaceBookJSDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FaceBookJSDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0820EA2A165CAE560005629E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0820EA2C165CAE560005629E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0820EA2E165CAE560005629E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0820EA32165CAE560005629E /* FaceBookJSDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FaceBookJSDemo-Info.plist"; sourceTree = "<group>"; };
+		0820EA34165CAE560005629E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0820EA36165CAE560005629E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0820EA38165CAE560005629E /* FaceBookJSDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FaceBookJSDemo-Prefix.pch"; sourceTree = "<group>"; };
+		0820EA39165CAE560005629E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0820EA3A165CAE560005629E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08379432165CB3DA002588BC /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		08379434165CB3DE002588BC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		08379436165CB3E3002588BC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		08379438165CB3EE002588BC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		0837943A165CB3F1002588BC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0837943C165CB3F7002588BC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		0837943E165CB3FF002588BC /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		08379440165CB415002588BC /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		08379442165CB423002588BC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		08379448165CB4C5002588BC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		08379449165CB4C5002588BC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		083EA6CC1671CD9300329F8D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FE0A6E6C1680928800A91B46 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		FE0A6E6D1680928800A91B46 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		FE711461168BEC7A00AC6BF0 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FEBB071D16991CD800FBC538 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		FEC8A70016E97CBF00851A59 /* example */ = {isa = PBXFileReference; lastKnownFileType = folder; name = example; path = BridgeDemo/menuapp/example; sourceTree = SOURCE_ROOT; };
+		FEC8A70116E97CBF00851A59 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = BridgeDemo/menuapp/images; sourceTree = SOURCE_ROOT; };
+		FEC8A70216E97CBF00851A59 /* menuapp */ = {isa = PBXFileReference; lastKnownFileType = folder; name = menuapp; path = BridgeDemo/menuapp/menuapp; sourceTree = SOURCE_ROOT; };
+		FEC8A70316E97CBF00851A59 /* thirdparty */ = {isa = PBXFileReference; lastKnownFileType = folder; name = thirdparty; path = BridgeDemo/menuapp/thirdparty; sourceTree = SOURCE_ROOT; };
+		FEC8A70816E98A0600851A59 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		FECA17661688598F00FB6029 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0820EA23165CAE560005629E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE711462168BEC7A00AC6BF0 /* CoreLocation.framework in Frameworks */,
+				083EA6CD1671CD9300329F8D /* MapKit.framework in Frameworks */,
+				08379443165CB423002588BC /* Security.framework in Frameworks */,
+				08379441165CB415002588BC /* libsqlite3.dylib in Frameworks */,
+				0820EA2F165CAE560005629E /* CoreGraphics.framework in Frameworks */,
+				0837943F165CB3FF002588BC /* CoreMedia.framework in Frameworks */,
+				0837943D165CB3F7002588BC /* SystemConfiguration.framework in Frameworks */,
+				0837943B165CB3F1002588BC /* AddressBook.framework in Frameworks */,
+				08379439165CB3EE002588BC /* AddressBookUI.framework in Frameworks */,
+				08379437165CB3E3002588BC /* AVFoundation.framework in Frameworks */,
+				08379435165CB3DE002588BC /* AudioToolbox.framework in Frameworks */,
+				08379433165CB3DA002588BC /* MobileCoreServices.framework in Frameworks */,
+				0820EA2B165CAE560005629E /* UIKit.framework in Frameworks */,
+				0820EA2D165CAE560005629E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0820EA1B165CAE560005629E = {
+			isa = PBXGroup;
+			children = (
+				FECA17661688598F00FB6029 /* Default-568h@2x.png */,
+				0820EA30165CAE560005629E /* BridgeDemo */,
+				0820EA29165CAE560005629E /* Frameworks */,
+				0820EA27165CAE560005629E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0820EA27165CAE560005629E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0820EA26165CAE560005629E /* FaceBookJSDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0820EA29165CAE560005629E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE711461168BEC7A00AC6BF0 /* CoreLocation.framework */,
+				083EA6CC1671CD9300329F8D /* MapKit.framework */,
+				08379442165CB423002588BC /* Security.framework */,
+				08379440165CB415002588BC /* libsqlite3.dylib */,
+				0837943E165CB3FF002588BC /* CoreMedia.framework */,
+				0837943C165CB3F7002588BC /* SystemConfiguration.framework */,
+				0837943A165CB3F1002588BC /* AddressBook.framework */,
+				08379438165CB3EE002588BC /* AddressBookUI.framework */,
+				08379436165CB3E3002588BC /* AVFoundation.framework */,
+				08379434165CB3DE002588BC /* AudioToolbox.framework */,
+				08379432165CB3DA002588BC /* MobileCoreServices.framework */,
+				0820EA2A165CAE560005629E /* UIKit.framework */,
+				0820EA2C165CAE560005629E /* Foundation.framework */,
+				0820EA2E165CAE560005629E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0820EA30165CAE560005629E /* BridgeDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FEBB059E16991C6600FBC538 /* www */,
+				0820EA39165CAE560005629E /* AppDelegate.h */,
+				0820EA3A165CAE560005629E /* AppDelegate.m */,
+				08379448165CB4C5002588BC /* RootViewController.h */,
+				08379449165CB4C5002588BC /* RootViewController.m */,
+				FE0A6E6C1680928800A91B46 /* MBProgressHUD.h */,
+				FE0A6E6D1680928800A91B46 /* MBProgressHUD.m */,
+				0820EA31165CAE560005629E /* Supporting Files */,
+			);
+			path = BridgeDemo;
+			sourceTree = "<group>";
+		};
+		0820EA31165CAE560005629E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FEC8A70816E98A0600851A59 /* icon.png */,
+				0820EA32165CAE560005629E /* FaceBookJSDemo-Info.plist */,
+				0820EA33165CAE560005629E /* InfoPlist.strings */,
+				0820EA36165CAE560005629E /* main.m */,
+				0820EA38165CAE560005629E /* FaceBookJSDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FEBB059E16991C6600FBC538 /* www */ = {
+			isa = PBXGroup;
+			children = (
+				FEC8A70016E97CBF00851A59 /* example */,
+				FEC8A70116E97CBF00851A59 /* images */,
+				FEC8A70216E97CBF00851A59 /* menuapp */,
+				FEC8A70316E97CBF00851A59 /* thirdparty */,
+				FEBB071D16991CD800FBC538 /* index.html */,
+			);
+			path = www;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0820EA25165CAE560005629E /* FaceBookJSDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0820EA3E165CAE560005629E /* Build configuration list for PBXNativeTarget "FaceBookJSDemo" */;
+			buildPhases = (
+				0820EA22165CAE560005629E /* Sources */,
+				0820EA23165CAE560005629E /* Frameworks */,
+				0820EA24165CAE560005629E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FaceBookJSDemo;
+			productName = BridgeDemo;
+			productReference = 0820EA26165CAE560005629E /* FaceBookJSDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0820EA1D165CAE560005629E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = xyh;
+			};
+			buildConfigurationList = 0820EA20165CAE560005629E /* Build configuration list for PBXProject "FaceBookJSDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0820EA1B165CAE560005629E;
+			productRefGroup = 0820EA27165CAE560005629E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0820EA25165CAE560005629E /* FaceBookJSDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0820EA24165CAE560005629E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0820EA35165CAE560005629E /* InfoPlist.strings in Resources */,
+				FECA17671688598F00FB6029 /* Default-568h@2x.png in Resources */,
+				FEBB072816991CD800FBC538 /* index.html in Resources */,
+				FEC8A70416E97CBF00851A59 /* example in Resources */,
+				FEC8A70516E97CBF00851A59 /* images in Resources */,
+				FEC8A70616E97CBF00851A59 /* menuapp in Resources */,
+				FEC8A70716E97CBF00851A59 /* thirdparty in Resources */,
+				FEC8A70916E98A0600851A59 /* icon.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0820EA22165CAE560005629E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0820EA37165CAE560005629E /* main.m in Sources */,
+				0820EA3B165CAE560005629E /* AppDelegate.m in Sources */,
+				0837944D165CB4C5002588BC /* RootViewController.m in Sources */,
+				FE0A6E6E1680928800A91B46 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0820EA33165CAE560005629E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0820EA34165CAE560005629E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0820EA3C165CAE560005629E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: XU YUNHUI";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AF2E999A-C51C-48D3-823B-E1EC206B51D0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		0820EA3D165CAE560005629E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: XU YUNHUI";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "AF2E999A-C51C-48D3-823B-E1EC206B51D0";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0820EA3F165CAE560005629E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XU YUNHUI (VG6GB8F3RX)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BridgeDemo/FaceBookJSDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "BridgeDemo/FaceBookJSDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BridgeDemo/客户信息采集\"",
+					"\"$(SRCROOT)/BridgeDemo/网络框架\"",
+				);
+				PRODUCT_NAME = FaceBookJSDemo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "45D56746-AC73-4A9F-A71F-A0E4D791FEDC";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0820EA40165CAE560005629E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					armv7,
+					armv6,
+				);
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: XU YUNHUI (VG6GB8F3RX)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BridgeDemo/FaceBookJSDemo-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "BridgeDemo/FaceBookJSDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/BridgeDemo/客户信息采集\"",
+					"\"$(SRCROOT)/BridgeDemo/网络框架\"",
+				);
+				PRODUCT_NAME = FaceBookJSDemo;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "45D56746-AC73-4A9F-A71F-A0E4D791FEDC";
+				SDKROOT = iphoneos6.1;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "armv7 armv7s";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0820EA20165CAE560005629E /* Build configuration list for PBXProject "FaceBookJSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0820EA3C165CAE560005629E /* Debug */,
+				0820EA3D165CAE560005629E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0820EA3E165CAE560005629E /* Build configuration list for PBXNativeTarget "FaceBookJSDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0820EA3F165CAE560005629E /* Debug */,
+				0820EA40165CAE560005629E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0820EA1D165CAE560005629E /* Project object */;
+}

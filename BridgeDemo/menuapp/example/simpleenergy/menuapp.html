@@ -1,0 +1,93 @@
+<html>
+<header>
+	<link rel="stylesheet" type="text/css" href="../../menuapp/menuapp.css">
+	<script src="../../thirdparty/zepto.min.js" type="text/javascript"></script>
+	<script src="../../menuapp/menuapp.js" type="text/javascript"></script>
+</header>
+<body>
+</body>
+<script>
+
+$(document).ready(
+	function()
+	{
+		var menuHeader = "<div class='ma-search'><img src='../../images/search.png'/>Search</div>";
+		var menuObject =
+		{
+			"sections":
+			[
+				{
+					"items":
+					[
+						{ "id":	"menu-dashboard",	"html":	"<img src='../../images/plug.png'/>Dashboard"	},
+						{ "id":	"menu-badges",		"html":	"<img src='../../images/plug.png'/>Badges"			},
+						{ "id":	"menu-usage",		"html":	"<img src='../../images/plug.png'/>Usage Reports"	}
+					]
+				},
+				{
+					"title":	"LEADERBOARDS",
+					"items":
+					[
+						{ "id":	"lb-friends",	"html":	"<img src='../../images/plug.png'/>Friends"	},
+						{ "id":	"lb-team",		"html":	"<img src='../../images/plug.png'/>Team"			},
+						{ "id":	"lb-all",		"html":	"<img src='../../images/plug.png'/>Everyone"		}
+					]
+				},
+				{
+					"title":	"YOUR ACCOUNT",
+					"items":
+					[
+						{ "id":	"account-profile",	"html":	"<img src='../../images/plug.png'/>My Profile"	},
+						{ "id":	"account-settings",	"html":	"<img src='../../images/plug.png'/>Settings"		},
+						{ "id":	"account-help",		"html":	"<img src='../../images/plug.png'/>Help & Support"	},
+						{ "id":	"account-logout",	"html":	"<img src='../../images/plug.png'/>Sign Out"		}
+					]
+				},
+				{
+					"title":	"",
+					"items":	[]
+				},
+			]
+		};
+
+		// Remove address bar to make sure we have a correct sized window
+		window.scrollTo(0, 1);
+
+		// Build menu app
+		var menuApp = new MenuApp();
+		menuApp.initialize($("body"), menuHeader, menuObject)
+		menuHeader = undefined;
+		menuObject = undefined;
+
+		// Set navigation icons
+		$(".ma-nav-left").html("<img src='../../images/menu.png'/>");
+		$(".ma-nav-right").html("<img src='../../images/reload.png'/>");
+
+		// Load initial view
+		menuApp.initView( { "title": "Dashboard", "main": "This is the dashboard" } );
+
+		// Setup menu behaviour
+		$("#menu-dashboard"		).click( function() { menuApp.initView( { "title": "Dashboard", "main": "This is the dashboard" } );			} );
+		$("#menu-badges"		).click( function() { menuApp.initView( { "title": "Badges", "main": "This is the badges" } );					} );
+		$("#menu-usage"			).click( function() { menuApp.initView( { "title": "Usage Reports", "main": "This is the usage reports" } );	} );
+		$("#lb-friends"			).click( function() { menuApp.initView( { "title": "Friends", "main": "This is the friends leaderboard" } );	} );
+		$("#lb-team"			).click( function() { menuApp.initView( { "title": "Team", "main": "This is the team leaderboard" } );			} );
+		$("#lb-all"				).click( function() { menuApp.initView( { "title": "Everyone", "main": "This is the all leaderboard" } );		} );
+		$("#account-profile"	).click( function() { menuApp.initView( { "title": "Profile", "main": "This is the profile" } );				} );
+		$("#account-settings"	).click( function() { menuApp.initView( { "title": "Settings", "main": "This is the settings" } );				} );
+		$("#account-help"		).click( function() { menuApp.initView( { "title": "Help & Support", "main": "This is the help & support" } );	} );
+		$("#account-logout"		).click( function() { menuApp.initView( { "title": "Sign Out", "main": "This is the sign out" } );				} );
+
+// DEBUG
+		$(".ma-nav-right").click(
+			function()
+			{
+				location.reload();
+			}
+		);
+// DEBUG
+	}
+);
+
+</script>
+</html>
